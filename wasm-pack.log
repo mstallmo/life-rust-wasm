@@ -1,0 +1,64 @@
+Sep 24 17:18:00.305 ERRO Compilation of your program failed. stderr:
+
+   Compiling life-rust-wasm v0.1.0 (/home/mason/Workspace/life-rust-wasm)
+error[E0412]: cannot find type `cell` in this scope
+   --> src/lib.rs:103:36
+    |
+103 |     pub fn cells(&self) ->  *const cell {
+    |                                    ^^^^ did you mean `Cell`?
+
+warning: use of deprecated item 'wasm_bindgen::throw': renamed to `throw_str`
+ --> src/lib.rs:9:1
+  |
+9 | #[wasm_bindgen]
+  | ^^^^^^^^^^^^^^^
+  |
+  = note: #[warn(deprecated)] on by default
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0412`.
+error: Could not compile `life-rust-wasm`.
+
+To learn more, run the command again with --verbose.
+
+Sep 24 18:00:54.621 ERRO Compilation of your program failed. stderr:
+
+   Compiling proc-macro2 v0.4.19
+   Compiling unicode-xid v0.1.0
+   Compiling version_check v0.1.5
+   Compiling ryu v0.2.6
+   Compiling serde v1.0.79
+   Compiling wasm-bindgen-shared v0.2.22
+   Compiling cfg-if v0.1.5
+   Compiling itoa v0.4.3
+   Compiling wasm-bindgen v0.2.22
+   Compiling log v0.4.5
+   Compiling lazy_static v1.1.0
+   Compiling quote v0.6.8
+   Compiling syn v0.15.6
+   Compiling serde_json v1.0.30
+   Compiling serde_derive v1.0.79
+   Compiling wasm-bindgen-backend v0.2.22
+   Compiling wasm-bindgen-macro-support v0.2.22
+   Compiling wasm-bindgen-macro v0.2.22
+   Compiling js-sys v0.2.7
+   Compiling life-rust-wasm v0.1.0 (/home/mason/Workspace/life-rust-wasm)
+error: no rules expected the token `"cell [{}, {}] is initally {:?} and has {} live neighbors"`
+  --> src/lib.rs:46:22
+   |
+46 |                 log!("cell [{}, {}] is initally {:?} and has {} live neighbors", row, col, cell, live_neighbors);
+   |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: no rules expected the token `"  it becomes {:?}"`
+  --> src/lib.rs:55:22
+   |
+55 |                 log!("  it becomes {:?}", next_cell);
+   |                      ^^^^^^^^^^^^^^^^^^^
+
+error: aborting due to 2 previous errors
+
+error: Could not compile `life-rust-wasm`.
+
+To learn more, run the command again with --verbose.
+

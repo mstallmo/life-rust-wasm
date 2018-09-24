@@ -1,0 +1,16 @@
+{
+  "name": "life-rust-wasm",
+  "collaborators": [
+    "Mason Stallmo <masonstallmo@gmail.com>"
+  ],
+  "description": null,
+  "version": "0.1.0",
+  "license": null,
+  "repository": null,
+  "files": [
+    "life_rust_wasm_bg.wasm",
+    "life_rust_wasm.d.ts"
+  ],
+  "main": "life_rust_wasm.js",
+  "types": "life_rust_wasm.d.ts"
+}
