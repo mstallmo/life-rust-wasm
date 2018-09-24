@@ -45,16 +45,13 @@ impl Universe {
 
                 let next_cell = match (cell, live_neighbors) {
                     (Cell::Alive, x) if x < 2 => {
-                        log!("Cell [{}, {}] transitioned from Alive to Dead", row, col);
                         Cell::Dead
                     },
                     (Cell::Alive, 2) | (Cell::Alive, 3) => Cell::Alive,
                     (Cell::Alive, x) if x > 3 => {
-                        log!("Cell [{}, {}] transitioned from Alive to Dead", row, col);
                         Cell::Dead
                     },
                     (Cell::Dead, 3) => {
-                        log!("Cell [{}, {}] transitioned from Dead to Alive", row, col);
                         Cell::Alive
                     },
                     (otherwise, _) => otherwise,
